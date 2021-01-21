@@ -1,0 +1,2 @@
+Creating a file for saving the logs: touch logs.txt
+Running the container: docker container run -v "$(pwd)/logs.txt:/usr/app/logs.txt" devopsdockeruh/first_volume_exercise
