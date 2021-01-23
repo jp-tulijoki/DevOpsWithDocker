@@ -2,6 +2,8 @@
 
 An app for searching country details. Done previously as an assignment for the full stack open course.
 
+[Link to Docker Hub](https://hub.docker.com/r/riverfire/countries)
+
 Pulling the image from Docker Hub: `docker pull riverfire/countries:latest`
 
 Running the app: `docker container run -d -p 3000:3000 riverfire/countries:latest`
