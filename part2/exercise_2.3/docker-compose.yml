@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  backend:
+      image: backendexample
+      build: ../../part1/exercise_1.11
+      ports:
+        - 8000:8000
+      environment:
+        - FRONT_URL=http://localhost:5000
+  frontend:
+      image: frontendexample
+      build: ../../part1/exercise_1.10
+      ports:
+        - 5000:5000
+      environment: 
+        - API_URL=http://localhost:8000
